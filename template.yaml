@@ -178,6 +178,9 @@ Resources:
 
 # --- OUTPUTS ---
 Outputs:
+
+  VpcId:
+    Value: !Ref MyVPC
   LoadBalancerDNSName:
     Description: The DNS name of the load balancer
     Value: !GetAtt ApplicationLoadBalancer.DNSName
